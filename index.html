@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jota Style | Loja de Roupas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="logo">
+            <svg width="40" height="40" viewBox="0 0 40 40" aria-label="Logo Jota Style">
+                <circle cx="20" cy="20" r="18" fill="#1f3d36" />
+                <path d="M20 10 L20 16 M20 16 L8 28 L32 28 Z" stroke="#d9a79a" stroke-width="2" fill="none" />
+            </svg>
+            <div>
+                <h1>Jota Style</h1>
+                <p>Moda que combina com você</p>
+            </div>
+        </div>
+
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#categorias">Categorias</a></li>
+                <li><a href="#midia">Vídeo</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="carrinho">🛒 <span id="qtd-carrinho">0</span> | R$ <span id="total-carrinho">0,00</span></div>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="banner">
+            <div>
+                <h2>Nova coleção</h2>
+                <p>Estilo, conforto e personalidade em um só lugar.</p>
+                <a href="#produtos" class="botao">Comprar agora</a>
+            </div>
+            <canvas id="etiqueta" width="200" height="200">Seu navegador não suporta canvas.</canvas>
+        </section>
+
+        <section id="produtos">
+            <header class="titulo-secao">
+                <h2>Produtos em destaque</h2>
+                <p>Confira algumas das nossas peças mais populares.</p>
+            </header>
+
+            <div class="produtos" id="lista-produtos"></div>
+        </section>
+
+        <section id="categorias" class="categorias">
+            <header class="titulo-secao">
+                <h2>Encontre seu estilo</h2>
+            </header>
+
+            <div class="categorias-grid">
+                <article>
+                    <h3>Masculino</h3>
+                    <p>Confira nossa coleção masculina.</p>
+                    <a href="#produtos">Ver coleção</a>
+                </article>
+                <article>
+                    <h3>Feminino</h3>
+                    <p>Peças modernas para todos os momentos.</p>
+                    <a href="#produtos">Ver coleção</a>
+                </article>
+                <article>
+                    <h3>Promoções</h3>
+                    <p>Produtos selecionados com preços especiais.</p>
+                    <a href="#produtos">Ver ofertas</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="midia" class="midia">
+            <header class="titulo-secao">
+                <h2>Conheça a coleção</h2>
+            </header>
+
+            <figure>
+                <video controls width="480" poster="imagens/capa-video.jpg">
+                    <source src="videos/colecao.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeo.
+                </video>
+                <figcaption>Desfile da nova coleção</figcaption>
+            </figure>
+
+            <figure>
+                <audio controls>
+                    <source src="audios/musica-loja.mp3" type="audio/mpeg">
+                    Seu navegador não suporta áudio.
+                </audio>
+                <figcaption>Música ambiente da loja</figcaption>
+            </figure>
+        </section>
+
+        <aside class="beneficios">
+            <h2>Por que comprar na Jota Style?</h2>
+            <ul>
+                <li><strong>Frete grátis</strong><span>Nas compras acima de R$ 299</span></li>
+                <li><strong>Pagamento seguro</strong><span>Compre com segurança</span></li>
+                <li><strong>Troca fácil</strong><span>Até 30 dias para trocar</span></li>
+                <li><strong>Atendimento</strong><span>Suporte para ajudar você</span></li>
+            </ul>
+        </aside>
+
+        <section class="newsletter">
+            <header>
+                <h2>Receba nossas novidades</h2>
+                <p>Cadastre seu e-mail e receba promoções e lançamentos.</p>
+            </header>
+
+            <form id="form-newsletter">
+                <label for="email">Seu e-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+            <p id="mensagem"></p>
+        </section>
+
+    </main>
+
+    <footer id="contato">
+        <section>
+            <h2>Jota Style</h2>
+            <p>Moda, estilo e personalidade.</p>
+        </section>
+
+        <section>
+            <h2>Atendimento</h2>
+            <address>
+                <p>Telefone: (83) 99644-0729</p>
+                <p>E-mail: <a href="mailto:jpaulo25416@gmail.com">jpaulo25416@gmail.com</a></p>
+            </address>
+        </section>
+
+        <section>
+            <h2>Redes sociais</h2>
+            <nav aria-label="Redes sociais">
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">TikTok</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <p class="copyright">&copy; 2026 Jota Style. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

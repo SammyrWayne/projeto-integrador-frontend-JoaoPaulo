@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --verde: #1f3d36;
+    --verde-claro: #2f5a50;
+    --areia: #f6f1e9;
+    --rose: #d9a79a;
+    --texto: #2b2b2b;
+    --cinza: #7a7a7a;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    background-color: var(--areia);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: var(--verde);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    padding: 80px 40px;
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.titulo-secao h2 {
+    font-size: 2.2rem;
+}
+
+.titulo-secao h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: var(--rose);
+    margin: 14px auto;
+}
+
+.titulo-secao p {
+    color: var(--cinza);
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    background-color: white;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+}
+
+.logo p {
+    font-size: 0.75rem;
+    color: var(--cinza);
+}
+
+.cabecalho nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho nav a {
+    font-size: 0.9rem;
+    color: var(--verde);
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.cabecalho nav a:hover {
+    border-bottom-color: var(--rose);
+}
+
+.carrinho {
+    background-color: var(--verde);
+    color: white;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    min-height: 480px;
+    background: linear-gradient(120deg, #f6e3dc, #e8d9c5);
+    text-align: center;
+}
+
+.banner h2 {
+    font-size: 3.8rem;
+    line-height: 1.1;
+}
+
+.banner p {
+    margin: 15px 0 25px;
+    color: var(--cinza);
+    font-size: 1.1rem;
+}
+
+.botao,
+button {
+    display: inline-block;
+    background-color: var(--verde);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.botao:hover,
+button:hover {
+    background-color: var(--verde-claro);
+    transform: scale(1.05);
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.produto {
+    background-color: white;
+    width: 250px;
+    text-align: center;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.produto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(31, 61, 54, 0.2);
+}
+
+.produto figure {
+    overflow: hidden;
+}
+
+.produto img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.produto:hover img {
+    transform: scale(1.08);
+}
+
+.produto-info {
+    padding: 20px;
+}
+
+.produto-info p {
+    font-size: 0.85rem;
+    color: var(--cinza);
+}
+
+.produto-info strong {
+    display: block;
+    margin: 12px 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--verde);
+}
+
+.categorias {
+    background-color: white;
+}
+
+.categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.categorias-grid article {
+    background-color: var(--areia);
+    padding: 45px 20px;
+    text-align: center;
+    border-radius: 16px;
+    transition: background-color 0.3s;
+}
+
+.categorias-grid article:hover {
+    background-color: #f6e3dc;
+}
+
+.categorias-grid p {
+    color: var(--cinza);
+    margin: 10px 0 18px;
+}
+
+.categorias-grid a {
+    color: var(--verde);
+    font-weight: 500;
+    border-bottom: 2px solid var(--rose);
+}
+
+.midia {
+    text-align: center;
+}
+
+.midia figure {
+    margin-bottom: 30px;
+}
+
+.midia video {
+    max-width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.midia figcaption {
+    margin-top: 10px;
+    color: var(--cinza);
+    font-size: 0.85rem;
+}
+
+.beneficios {
+    background-color: var(--verde);
+    padding: 70px 40px;
+    text-align: center;
+}
+
+.beneficios h2 {
+    color: white;
+}
+
+.beneficios ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.beneficios li {
+    background-color: var(--verde-claro);
+    padding: 25px 15px;
+    border-radius: 16px;
+    color: white;
+}
+
+.beneficios strong,
+.beneficios span {
+    display: block;
+}
+
+.beneficios strong {
+    color: var(--rose);
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.beneficios span {
+    font-size: 0.85rem;
+}
+
+.newsletter {
+    text-align: center;
+}
+
+.newsletter header {
+    margin-bottom: 20px;
+}
+
+.newsletter input {
+    padding: 12px 20px;
+    width: 280px;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 8px;
+}
+
+.newsletter input:focus {
+    outline: none;
+    border-color: var(--verde);
+}
+
+#mensagem {
+    margin-top: 15px;
+    color: var(--verde);
+    font-weight: 500;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #14291f;
+    color: #cfd8d4;
+    padding: 55px 40px 20px;
+}
+
+footer h2 {
+    color: var(--rose);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+footer a:hover {
+    color: var(--rose);
+}
+
+footer address {
+    font-style: normal;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #2f4a3f;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 800px) {
+    .categorias-grid,
+    .beneficios ul {
+        grid-template-columns: 1fr;
+    }
+
+    .cabecalho {
+        justify-content: center;
+    }
+
+    .banner h2 {
+        font-size: 2.6rem;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+}
