@@ -7,6 +7,9 @@
     <title>Jota Style | Loja de Roupas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <title>Jota Style | Loja de Roupas</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -24,6 +27,14 @@
             </div>
         </div>
 
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>Jota Style</h1>
+            <p>Moda que combina com você</p>
+        </div>
+
+        <!-- Menu de navegação -->
         <nav aria-label="Navegação principal">
             <ul>
                 <li><a href="#inicio">Início</a></li>
@@ -39,6 +50,18 @@
 
     <main>
 
+                <li><a href="#masculino">Masculino</a></li>
+                <li><a href="#feminino">Feminino</a></li>
+                <li><a href="#promocoes">Promoções</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+
+        <!-- Banner principal -->
         <section id="inicio" class="banner">
             <div>
                 <h2>Nova coleção</h2>
@@ -48,6 +71,14 @@
             <canvas id="etiqueta" width="200" height="200">Seu navegador não suporta canvas.</canvas>
         </section>
 
+
+                <a href="#produtos" class="botao">
+                    Comprar agora
+                </a>
+            </div>
+        </section>
+
+        <!-- Produtos em destaque -->
         <section id="produtos">
             <header class="titulo-secao">
                 <h2>Produtos em destaque</h2>
@@ -58,6 +89,90 @@
         </section>
 
         <section id="categorias" class="categorias">
+            <div class="produtos">
+
+                <!-- Produto 1 -->
+                <article class="produto">
+                    <figure>
+                        <img src="imagens/camiseta.jpg"
+                             alt="Camiseta preta básica">
+                    </figure>
+
+                    <div class="produto-info">
+                        <h3>Camiseta Preta Basica</h3>
+                        <p>Camiseta masculina em algodão.</p>
+
+                        <strong>R$ 79,90</strong>
+
+                        <button type="button">
+                            Adicionar ao carrinho
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Produto 2 -->
+                <article class="produto">
+                    <figure>
+                        <img src="imagens/calca.jpg"
+                             alt="Calça jeans azul">
+                    </figure>
+
+                    <div class="produto-info">
+                        <h3>Calça Jeans</h3>
+                        <p>Calça jeans  moderna.</p>
+
+                        <strong>R$ 149,90</strong>
+
+                        <button type="button">
+                            Adicionar ao carrinho
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Produto 3 -->
+                <article class="produto">
+                    <figure>
+                        <img src="imagens/moletom.jpg"
+                             alt="Moletom preto">
+                    </figure>
+
+                    <div class="produto-info">
+                        <h3>Moletom </h3>
+                        <p>Moletom confortável para o dia a dia.</p>
+
+                        <strong>R$ 129,90</strong>
+
+                        <button type="button">
+                            Adicionar ao carrinho
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Produto 4 -->
+                <article class="produto">
+                    <figure>
+                        <img src="imagens/tenis.jpg"
+                             alt="Tenis casual branco">
+                    </figure>
+
+                    <div class="produto-info">
+                        <h3>Tenis </h3>
+                        <p>Tenis casual para completar seu look.</p>
+
+                        <strong>R$ 199,90</strong>
+
+                        <button type="button">
+                            Adicionar ao carrinho
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Categorias -->
+        <section class="categorias">
+
             <header class="titulo-secao">
                 <h2>Encontre seu estilo</h2>
             </header>
@@ -125,11 +240,89 @@
                 <button type="submit">Cadastrar</button>
             </form>
             <p id="mensagem"></p>
+
+                <article>
+                    <h3>Masculino</h3>
+                    <p>Confira nossa coleção masculina.</p>
+                    <a href="#masculino">Ver coleção</a>
+                </article>
+
+                <article>
+                    <h3>Feminino</h3>
+                    <p>Peças modernas para todos os momentos.</p>
+                    <a href="#feminino">Ver coleção</a>
+                </article>
+
+                <article>
+                    <h3>Promoções</h3>
+                    <p>Produtos selecionados com preços especiais.</p>
+                    <a href="#promocoes">Ver ofertas</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Benefícios -->
+        <aside class="beneficios">
+
+            <h2>Por que comprar na Jota Style?</h2>
+
+            <ul>
+                <li>
+                    <strong>Frete grátis</strong>
+                    <span>Nas compras acima de R$ 299</span>
+                </li>
+
+                <li>
+                    <strong>Pagamento seguro</strong>
+                    <span>Compre com segurança</span>
+                </li>
+
+                <li>
+                    <strong>Troca fácil</strong>
+                    <span>Você tem até 30 dias para trocar</span>
+                </li>
+
+                <li>
+                    <strong>Atendimento</strong>
+                    <span>Suporte para ajudar você</span>
+                </li>
+            </ul>
+
+        </aside>
+
+        <!-- Newsletter -->
+        <section class="newsletter">
+            <header>
+                <h2>Receba nossas novidades</h2>
+                <p>
+                    Cadastre seu e-mail e receba promoções e lançamentos.
+                </p>
+            </header>
+
+            <form>
+                <label for="email">Seu e-mail:</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Digite seu e-mail"
+                    required
+                >
+
+                <button type="submit">
+                    Cadastrar
+                </button>
+            </form>
         </section>
 
     </main>
 
     <footer id="contato">
+    <!-- Rodapé -->
+    <footer id="contato">
+
         <section>
             <h2>Jota Style</h2>
             <p>Moda, estilo e personalidade.</p>
@@ -138,13 +331,21 @@
         <section>
             <h2>Atendimento</h2>
             <address>
-                <p>Telefone: (83) 99644-0729</p>
+                <p>Telefone: (83) 99999-9999</p>
                 <p>E-mail: <a href="mailto:jpaulo25416@gmail.com">jpaulo25416@gmail.com</a></p>
+                <p>Telefone: (83) 99999-9999</p>
+                <p>
+                    E-mail:
+                    <a href="mailto:jpaulo25416@gmail.com.com">
+                        jpaulo25416@gmail.com.com
+                    </a>
+                </p>
             </address>
         </section>
 
         <section>
             <h2>Redes sociais</h2>
+
             <nav aria-label="Redes sociais">
                 <ul>
                     <li><a href="#">Instagram</a></li>
@@ -158,6 +359,12 @@
     </footer>
 
     <script src="script.js"></script>
+        <p class="copyright">
+            &copy; 2026 Jotastyle. Todos os direitos reservados.
+        </p>
+
+    </footer>
+
 </body>
 
 </html>
